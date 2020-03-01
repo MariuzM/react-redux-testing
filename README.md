@@ -15,4 +15,3 @@ npm install
 - Material UI
 - Prop Types
 - ESLint
-# react-redux-testing
