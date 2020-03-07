@@ -6,10 +6,8 @@ import all from './reducers/index'
 
 import App from './App'
 
-const store = createStore(all)
-
 ReactDOM.render(
-  <Provider store={store}>
+  <Provider store={createStore(all)}>
     <App />
   </Provider>,
   document.getElementById('root'),

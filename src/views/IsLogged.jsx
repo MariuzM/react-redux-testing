@@ -20,6 +20,7 @@ export default function IsLogged() {
         onClick={() => dispatch(isLogged())}
         value="Log Toggle"
         color="primary"
+        buttonColor="#444"
       />
     </>
   )

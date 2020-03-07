@@ -1,0 +1,49 @@
+$white: #efefef;
+$black: #333333;
+$display-color: $white;
+$background-color: #ff7a23;
+$box-shadow-hover: 0 14px 28px #00000040, 0 10px 10px #00000038;
+$border-radius: 5px;
+
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  background: $background-color;
+}
+
+#counter-app {
+  height: 50%;
+  width: 250px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+  padding: 1em;
+  border-radius: $border-radius;
+  #display {
+    $len: 150px;
+    height: $len;
+    width: $len;
+    color: $black;
+    margin: auto;
+    font-size: calc(#{$len} / 1.5);
+    line-height: $len;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow-hover;
+    background: $display-color;
+  }
+  .container {
+    padding: 1em;
+  }
+}
